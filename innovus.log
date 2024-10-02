@@ -1,0 +1,653 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.14-s095_1, built Mon Apr 19 14:41:42 PDT 2021
+Options:	
+Date:		Thu Sep 12 19:59:35 2024
+Host:		Entuple-Client-2 (x86_64 w/Linux 3.10.0-1160.31.1.el7.x86_64) (2cores*4cpus*AMD EPYC 7571 512KB)
+OS:		Red Hat Enterprise Linux Server release 7.9 (Maipo)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+default_rc_corner
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_POv', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_DIFF', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PSUB', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PIMP', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NIMP', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NWELL', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PO', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_DIFFc', 
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_POLYc', 
+**WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-119):	LAYER 'Oxide' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Poly' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Nhvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Nimp' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Phvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Pimp' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Nzvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'SiProt' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Cont' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Via1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Via2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Via3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Via4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Via5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'Metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (EMS-27):	Message (IMPLF-119) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1X' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1V' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1H' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1XR90' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1_2CUT_E' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1_2CUT_W' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1_2CUT_N' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1_2CUT_S' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA1_2X2CUT' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2X' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2H' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2V' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2XR90' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2TOS' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2TOS_S' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2TOS_N' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2_2CUT_N' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2_2CUT_S' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2_2CUT_E' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**ERROR: (IMPLF-223):	The LEF via 'VIA2_2CUT_W' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+**WARN: (EMS-27):	Message (IMPLF-223) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-151):	The viaRule 'VIA1ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA2ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA3ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA4ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA5ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA6ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA7ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'VIA8ARRAY' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M9_M8v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M8_M7v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M7_M6v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M6_M5v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M5_M4v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M4_M3v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M3_M2v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M2_M1v' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M1_POv' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M1_DIFF' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M1_PSUB' has been defined, the content will be skipped.
+**WARN: (IMPLF-151):	The viaRule 'M1_PIMP' has been defined, the content will be skipped.
+**WARN: (EMS-27):	Message (IMPLF-151) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+rule is neither a routing layer nor a cut layer. The rule is ignored.
+**WARN: (IMPLF-58):	MACRO 'OAI2BB1X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'OA22X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'NAND3X8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'SDFFRX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'TLATSRX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'OAI2BB1X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'DLY4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'ADDFX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'CLKAND2X12' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'MXI3XL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'NAND3X6' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'SDFFRX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'MX3X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'SDFFSRHQX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'OAI33XL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'TLATSRX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'DFFHQX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AOI221X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'ADDFX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AOI22XL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-61):	487 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Loading view definition file from /StudentData/student35/Desktop/Rudra/project_3/route.enc.dat/viewDefinition.tcl
+**WARN: (TECHLIB-9153):	Duplicate definition for attribute 'dont_use' encountered. The last definition will be retained. (File /StudentData/student35/Desktop/Rudra/ext/fast.lib, Line 19302)
+*** End library_loading (cpu=0.03min, real=0.02min, mem=15.5M, fe_cpu=0.55min, fe_real=1.00min, fe_mem=787.7M) ***
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'OAI211XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'OAI211XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'CLKAND2X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'CLKAND2X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'SEDFFHQX1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'SEDFFHQX1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'EDFFTRX2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'EDFFTRX2' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'NOR3X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'NOR3X4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'DFFHQX4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'DFFHQX4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'CLKMX2X8' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'CLKMX2X8' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'OAI222XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'OAI222XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'OA22XL' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'OA22XL' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+*** Netlist is unique.
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading preference file /StudentData/student35/Desktop/Rudra/project_3/route.enc.dat/gui.pref.tcl ...
+**WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading place ...
+**WARN: (IMPEXT-2773):	The via resistance between layers M0 and M1 could not be determined from the LEF technology file because the via resistance specification is missing. A default of 4 Ohms will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M1 and M2 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M2 and M3 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M3 and M4 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M4 and M5 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M5 and M6 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M6 and M7 is not defined in the capacitance table file. The via resistance of 1.4 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M7 and M8 is not defined in the capacitance table file. The via resistance of 0.35 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2776):	The via resistance between layers M8 and M9 is not defined in the capacitance table file. The via resistance of 0.35 Ohms defined in the LEF technology file will be used as via resistance between these layers.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M1 is not defined in the cap table. Therefore, the LEF value 0.08 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M2 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M3 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M4 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M5 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M6 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M7 is not defined in the cap table. Therefore, the LEF value 0.06 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M8 is not defined in the cap table. Therefore, the LEF value 0.02 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+**WARN: (IMPEXT-2766):	The sheet resistance for layer M9 is not defined in the cap table. Therefore, the LEF value 0.02 will be used instead. To avoid this message, update the relevant cap table to include the sheet resistance for the specified layer and read it back in.
+'set_default_switching_activity' finished successfully.
+max_delay min_delay
+**WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.14-s095_1. They will be removed in the next release. 
+timing_enable_default_delay_arc
+<CMD> selectWire 96.7750 6.5500 98.5750 112.9300 8 VDD
+<CMD> zoomBox -0.64350 -13.85700 222.26550 129.13050
+<CMD> setSrouteMode -viaConnectToShape { noshape }
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal9(9) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal9(9) } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal9(9) }
+*** Begin SPECIAL ROUTE on Thu Sep 12 20:01:56 2024 ***
+SPECIAL ROUTE ran on directory: /StudentData/student35/Desktop/Rudra/project_3
+SPECIAL ROUTE ran on machine: Entuple-Client-2 (Linux 3.10.0-1160.31.1.el7.x86_64 x86_64 2.20Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 9
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 9
+srouteTopTargetLayerLimit set to 9
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2249.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 19 layers, 9 routing layers, 1 overlap layer
+Read in 2 nondefault rules, 0 used
+Read in 487 macros, 72 used
+Read in 3701 components
+  3701 core components: 0 unplaced, 3435 placed, 266 fixed
+Read in 107 physical pins
+  107 physical pins: 0 unplaced, 107 placed, 0 fixed
+Read in 105 nets
+Read in 2 special nets, 2 routed
+Read in 107 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VDD net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VSS net.
+ Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+End power routing: cpu: 0:00:01, real: 0:00:00, peak: 2302.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 107 io pins ...
+ Updating DB with 0 via definition ...
+sroute created 0 wire.
+ViaGen created 0 via, deleted 0 via to avoid violation.
+**WARN: (IMPTCM-77):	Option "-routeEcoOnlyInLayers" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven true
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven false
+Running Native NanoRoute ...
+<CMD> routeDesign -globalDetail
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 960.12 (MB), peak = 973.72 (MB)
+#WARNING (NRIG-96) Selected single pass global detail route "-globalDetail". Clock eco and post optimizations will not be run. See "man NRIG-96" for more details.
+**INFO: User settings:
+setNanoRouteMode -drouteEndIteration                            1
+setNanoRouteMode -droutePostRouteSpreadWire                     1
+setNanoRouteMode -droutePostRouteWidenWireRule                  LEFDefaultRouteSpec_gpdk090
+setNanoRouteMode -extractThirdPartyCompatible                   false
+setNanoRouteMode -grouteExpTdStdDelay                           22.4
+setNanoRouteMode -grouteExpTdUseTifTimingEngineForImportDesign  true
+setNanoRouteMode -routeBottomRoutingLayer                       1
+setNanoRouteMode -routeTopRoutingLayer                          9
+setNanoRouteMode -routeWithSiDriven                             false
+setNanoRouteMode -routeWithTimingDriven                         true
+setNanoRouteMode -timingEngine                                  {}
+setExtractRCMode -engine                                        preRoute
+setDelayCalMode -enable_high_fanout                             true
+setDelayCalMode -eng_copyNetPropToNewNet                        true
+setDelayCalMode -engine                                         aae
+setDelayCalMode -ignoreNetLoad                                  false
+setDelayCalMode -socv_accuracy_mode                             low
+setSIMode -separate_delta_delay_on_data                         true
+
+#default_rc_corner has no qx tech file defined
+#No active RC corner or QRC tech file is missing.
+#**INFO: setDesignMode -flowEffort standard
+#**INFO: multi-cut via swapping will not be performed after routing.
+#**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+Begin checking placement ... (start mem=1189.2M, init mem=1221.3M)
+*info: Placed = 3701           (Fixed = 266)
+*info: Unplaced = 0           
+Placement Density:100.00%(14324/14324)
+Placement Density (including fixed std cells):100.00%(14726/14726)
+Finished checkPlace (total: cpu=0:00:00.2, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1221.3M)
+#WARNING (NRIG-87) Timing file "" not found, resetting timing engine to default for this session.
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1221.3M) ***
+
+globalDetailRoute
+
+#Start globalDetailRoute on Thu Sep 12 20:02:24 2024
+#
+#Warning: design is detail-routed. Trial route is skipped!
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+#num needed restored net=0
+#need_extraction net=0 (total=1534)
+#WARNING (NRDB-2005) SPECIAL_NET VDD has special wires but no definitions for instance pins or top level pins. This will cause routability problems later.
+#WARNING (NRDB-2005) SPECIAL_NET VSS has special wires but no definitions for instance pins or top level pins. This will cause routability problems later.
+#NanoRoute Version 20.14-s095_1 NR210411-1939/20_14-UB
+#Total number of trivial nets (e.g. < 2 pins) = 10 (skipped).
+#Total number of routable nets = 1524.
+#Total number of nets in the design = 1534.
+#1524 routable nets have routed wires.
+#No nets have been global routed.
+#Start routing data preparation on Thu Sep 12 20:02:25 2024
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.320.
+#Voltage range [0.000 - 1.320] has 1531 nets.
+#Voltage range [0.000 - 0.000] has 2 nets.
+#Voltage range [1.080 - 1.320] has 1 net.
+#Rebuild pin access data for design.
+#WARNING (NRDB-1028) Some option affecting pin access calculation is set by the user. Pin access is to be recalculated. This incurs runtime.
+#Initial pin access analysis.
+#Detail pin access analysis.
+# Metal1       H   Track-Pitch = 0.29000    Line-2-Via Pitch = 0.25500
+# Metal2       V   Track-Pitch = 0.29000    Line-2-Via Pitch = 0.28500
+# Metal3       H   Track-Pitch = 0.29000    Line-2-Via Pitch = 0.28500
+# Metal4       V   Track-Pitch = 0.29000    Line-2-Via Pitch = 0.28500
+# Metal5       H   Track-Pitch = 0.29000    Line-2-Via Pitch = 0.28500
+# Metal6       V   Track-Pitch = 0.29000    Line-2-Via Pitch = 0.28500
+# Metal7       H   Track-Pitch = 0.29000    Line-2-Via Pitch = 0.28500
+# Metal8       V   Track-Pitch = 0.87000    Line-2-Via Pitch = 0.85000
+# Metal9       H   Track-Pitch = 0.87000    Line-2-Via Pitch = 0.85000
+#Monitoring time of adding inner blkg by smac
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 978.12 (MB), peak = 1012.29 (MB)
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.29000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:05, elapsed time = 00:00:06, memory = 990.09 (MB), peak = 1012.29 (MB)
+#
+#Finished routing data preparation on Thu Sep 12 20:02:31 2024
+#
+#Cpu time = 00:00:05
+#Elapsed time = 00:00:06
+#Increased memory = 24.09 (MB)
+#Total memory = 990.20 (MB)
+#Peak memory = 1012.29 (MB)
+#
+#
+#Start global routing on Thu Sep 12 20:02:31 2024
+#
+#
+#Start global routing initialization on Thu Sep 12 20:02:31 2024
+#
+#WARNING (NRGR-22) Design is already detail routed.
+#Routing data preparation, pin analysis, global routing and track assignment statistics:
+#Cpu time = 00:00:06
+#Elapsed time = 00:00:06
+#Increased memory = 24.24 (MB)
+#Total memory = 990.27 (MB)
+#Peak memory = 1012.29 (MB)
+#
+#Start Detail Routing..
+#start 1st optimization iteration ...
+#   number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 997.64 (MB), peak = 1012.29 (MB)
+#Complete Detail Routing.
+#Total wire length = 31352 um.
+#Total half perimeter of net bounding box = 28183 um.
+#Total wire length on LAYER Metal1 = 1640 um.
+#Total wire length on LAYER Metal2 = 12527 um.
+#Total wire length on LAYER Metal3 = 12257 um.
+#Total wire length on LAYER Metal4 = 4078 um.
+#Total wire length on LAYER Metal5 = 768 um.
+#Total wire length on LAYER Metal6 = 24 um.
+#Total wire length on LAYER Metal7 = 57 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total number of vias = 9348
+#Up-Via Summary (total 9348):
+#           
+#-----------------------
+# Metal1           5068
+# Metal2           3596
+# Metal3            629
+# Metal4             50
+# Metal5              3
+# Metal6              2
+#-----------------------
+#                  9348 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:02
+#Increased memory = 3.61 (MB)
+#Total memory = 993.88 (MB)
+#Peak memory = 1012.29 (MB)
+#
+#Start Post Route wire spreading..
+#
+#Start DRC checking..
+#   number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1003.09 (MB), peak = 1034.29 (MB)
+#CELL_VIEW module_i2c,init has no DRC violation.
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0 ant fix stage
+#
+#Start data preparation for wire spreading...
+#
+#Data preparation is done on Thu Sep 12 20:02:34 2024
+#
+#
+#Start Post Route Wire Spread.
+#Done with 84 horizontal wires in 2 hboxes and 52 vertical wires in 3 hboxes.
+#Complete Post Route Wire Spread.
+#
+#Total wire length = 31388 um.
+#Total half perimeter of net bounding box = 28183 um.
+#Total wire length on LAYER Metal1 = 1640 um.
+#Total wire length on LAYER Metal2 = 12536 um.
+#Total wire length on LAYER Metal3 = 12280 um.
+#Total wire length on LAYER Metal4 = 4082 um.
+#Total wire length on LAYER Metal5 = 768 um.
+#Total wire length on LAYER Metal6 = 24 um.
+#Total wire length on LAYER Metal7 = 57 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total number of vias = 9348
+#Up-Via Summary (total 9348):
+#           
+#-----------------------
+# Metal1           5068
+# Metal2           3596
+# Metal3            629
+# Metal4             50
+# Metal5              3
+# Metal6              2
+#-----------------------
+#                  9348 
+#
+#
+#Start DRC checking..
+#   number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1003.46 (MB), peak = 1034.29 (MB)
+#CELL_VIEW module_i2c,init has no DRC violation.
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0 ant fix stage
+#   number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:02, memory = 1003.46 (MB), peak = 1034.29 (MB)
+#CELL_VIEW module_i2c,init has no DRC violation.
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0 ant fix stage
+#Post Route wire spread is done.
+#Total wire length = 31388 um.
+#Total half perimeter of net bounding box = 28183 um.
+#Total wire length on LAYER Metal1 = 1640 um.
+#Total wire length on LAYER Metal2 = 12536 um.
+#Total wire length on LAYER Metal3 = 12280 um.
+#Total wire length on LAYER Metal4 = 4082 um.
+#Total wire length on LAYER Metal5 = 768 um.
+#Total wire length on LAYER Metal6 = 24 um.
+#Total wire length on LAYER Metal7 = 57 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total number of vias = 9348
+#Up-Via Summary (total 9348):
+#           
+#-----------------------
+# Metal1           5068
+# Metal2           3596
+# Metal3            629
+# Metal4             50
+# Metal5              3
+# Metal6              2
+#-----------------------
+#                  9348 
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:04
+#Elapsed time = 00:00:06
+#Increased memory = 9.39 (MB)
+#Total memory = 999.66 (MB)
+#Peak memory = 1034.29 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:10
+#Elapsed time = 00:00:12
+#Increased memory = 33.32 (MB)
+#Total memory = 1002.52 (MB)
+#Peak memory = 1034.29 (MB)
+#Number of warnings = 4
+#Total number of warnings = 24
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Thu Sep 12 20:02:37 2024
+#
+#Default setup view is reset to setup.
+#Default setup view is reset to setup.
+#routeDesign: cpu time = 00:00:10, elapsed time = 00:00:13, memory = 998.16 (MB), peak = 1034.29 (MB)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> setLayerPreference node_layer -isVisible 0
+<CMD> setLayerPreference node_layer -isVisible 1
+<CMD> setLayerPreference node_gird -isVisible 1
+<CMD> setLayerPreference node_gird -isVisible 0
+<CMD> setLayerPreference violation -isVisible 0
+<CMD> setLayerPreference violation -isVisible 1
+<CMD> zoomBox 8.38000 -6.53350 197.85300 115.00600
+<CMD> zoomBox -0.64450 -13.85750 222.26550 129.13050
+<CMD> zoomBox -11.26100 -22.47350 250.98600 145.74750
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix module_i2c_preCTS -outDir timingReports
+AAE DB initialization (MEM=1240.32 CPU=0:00:00.0 REAL=0:00:00.0) 
+*** timeDesign #1 [begin] : totSession cpu/real = 0:01:15.5/0:03:35.7 (0.4), mem = 1240.3M
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=1261.4M)
+Extraction called for design 'module_i2c' of instances=3701 and nets=1534 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design module_i2c.
+RC Extraction called in multi-corner(1) mode.
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+Type 'man IMPEXT-6197' for more detail.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 1261.375M)
+Starting delay calculation for Setup views
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: module_i2c
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in BcWc mode...
+Start delay calculation (fullDC) (1 T). (MEM=1292.73)
+Total number of fetched objects 1531
+End delay calculation. (MEM=1308.85 CPU=0:00:00.4 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1281.77 CPU=0:00:00.5 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.6 real=0:00:01.0 totSessionCpu=0:01:16 mem=1281.8M)
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ setup 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.000  |   N/A   |  0.000  |
+|           TNS (ns):|  0.000  |   N/A   |  0.000  |
+|    Violating Paths:|    0    |   N/A   |    0    |
+|          All Paths:|    0    |   N/A   |    0    |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 60.796%
+       (100.000% with Fillers)
+Routing Overflow: 0.00% H and 0.00% V
+------------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.23 sec
+Total Real time: 5.0 sec
+Total Memory Usage: 1227.03125 Mbytes
+*** timeDesign #1 [finish] : cpu/real = 0:00:01.2/0:00:05.4 (0.2), totSession cpu/real = 0:01:16.7/0:03:41.1 (0.3), mem = 1227.0M
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu Sep 12 20:07:47 2024
+  Total CPU time:     0:02:12
+  Total real time:    0:08:14
+  Peak memory (main): 1023.67MB
+
+
+*** Memory Usage v#1 (Current mem = 1229.922M, initial mem = 284.305M) ***
+*** Message Summary: 1558 warning(s), 103 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:07, real=0:08:12, mem=1229.9M) ---
